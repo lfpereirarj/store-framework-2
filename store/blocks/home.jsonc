@@ -2,7 +2,7 @@
   "store.home": { 
     "blocks": [
       "flex-layout.row",
-      "shelf",
+      
       "slider-layout#home",
       "responsive-layout.desktop#desktop",
       "responsive-layout.mobile#mobile"
@@ -16,11 +16,11 @@
     ]
   },
   "responsive-layout.desktop#desktop": {
-    "children": ["rich-text#desktop", "image#desktop"]
+    "children": ["rich-text#desktop", "image#desktop", "shelf#home"]
   },
   
   "responsive-layout.mobile#mobile": {
-    "children": ["rich-text#mobile", "image#mobile"]
+    "children": ["rich-text#mobile", "image#mobile", "shelf#mobile"]
   },
   
   "rich-text#desktop": {
@@ -85,6 +85,41 @@
       "headline": "Time to rethink your kitchen",
       "callToActionText": "Discover",
       "textPosition": "center"
+    }
+  },
+
+  "shelf#home": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "category": 1,
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 8,
+        "itemsPerPage": 5,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Top"
+      }
+    }
+  },
+
+  "shelf#mobile": {
+    "blocks": ["product-summary.shelf"],
+    "props": {
+      "category": 1,
+      "orderBy": "OrderByTopSaleDESC",
+      "paginationDotsVisibility": "desktopOnly",
+      "productList": {
+        "maxItems": 8,
+        "itemsPerPage": 2,
+        "minItemsPerPage": 1,
+        "scroll": "BY_PAGE",
+        "arrows": true,
+        "titleText": "Top"
+      },
+      "blockClass": "testwtetet"
     }
   }
 }
