@@ -5,14 +5,15 @@
   "search-result-layout": {
      "blocks": [
         "search-result-layout.desktop"
-     ],
-     "props":{
-      "pagination": "show-more",
-      "preventRouteChange": true
-     }
+     ]
+     
   },
   
   "search-result-layout.desktop": {
-    "children":["breadcrumb.search","search-title.v2", "total-products.v2", "order-by.v2", "search-fetch-previous", "search-content", "filter-navigator.v3", "search-fetch-more"]
+    "children":["breadcrumb.search","search-title.v2", "total-products.v2", "order-by.v2", "search-fetch-previous", "search-content", "filter-navigator.v3", "search-fetch-more"],
+    "props":{
+      "pagination": "show-more",
+      "preventRouteChange": true
+     }
   }
 }
