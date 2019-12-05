@@ -1,5 +1,21 @@
 {
   "store.search": {
-    "blocks": []
+    "blocks": ["search-result-layout"]
+  },
+  "search-result-layout": {
+     "blocks": [
+        "search-result-layout.desktop"
+     ]
+  },
+  
+  "search-result-layout.desktop": {
+    "children":["breadcrumb.search","search-title.v2", "total-products.v2", "order-by.v2", "search-fetch-previous","flex-layout.col#filter", "flex-layout.col#result", "search-fetch-more"]
+  },
+
+  "flex-layout.col#filter": {
+    "children": ["filter-navigator.v3"]
+  },
+  "flex-layout.col#result": {
+    "children": ["search-content"]
   }
 }
