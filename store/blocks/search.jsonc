@@ -46,6 +46,6 @@
   },
 
   "product-summary.shelf": {
-    "blocks":["product-summary-sku-selector"]
+    "children":["product-summary-sku-selector"]
   }
 }
