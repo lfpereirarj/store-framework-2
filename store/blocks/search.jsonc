@@ -5,17 +5,13 @@
   "search-result-layout": {
      "blocks": [
         "search-result-layout.desktop"
-     ]
+     ],
+     "props":{
+      "pagination": "show-more"
+     }
   },
   
   "search-result-layout.desktop": {
-    "children":["breadcrumb.search","search-title.v2", "total-products.v2", "order-by.v2", "search-fetch-previous","flex-layout.col#filter", "flex-layout.col#result", "search-fetch-more"]
-  },
-
-  "flex-layout.col#filter": {
-    "children": ["filter-navigator.v3"]
-  },
-  "flex-layout.col#result": {
-    "children": ["search-content"]
+    "children":["breadcrumb.search","search-title.v2", "total-products.v2", "order-by.v2", "search-fetch-previous", "search-content", "filter-navigator.v3", "search-fetch-more"]
   }
 }
